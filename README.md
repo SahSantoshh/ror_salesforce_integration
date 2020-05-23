@@ -1,4 +1,4 @@
-# README
+# ror_salesforce_integration
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -22,5 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-# ror_salesforce_integration
-# ror_salesforce_integration

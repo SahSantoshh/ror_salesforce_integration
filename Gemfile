@@ -38,7 +38,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # salesforce
 gem 'cookiejar', git: 'https://github.com/MissionCapital/cookiejar.git'
-gem 'faye', '0.8.9'
+gem 'faye', '1.0.4'
 gem 'restforce', '~> 4.2.2'
 
 group :development, :test do

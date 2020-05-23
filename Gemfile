@@ -36,9 +36,6 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-# .env
-gem 'dotenv-rails', '~> 2.7.4'
-
 # salesforce
 gem 'cookiejar', git: 'https://github.com/MissionCapital/cookiejar.git'
 gem 'faye', '0.8.9'
@@ -57,6 +54,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry'
+  gem 'dotenv-rails'
 end
 
 group :test do

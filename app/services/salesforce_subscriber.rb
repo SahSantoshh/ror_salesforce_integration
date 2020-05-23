@@ -24,7 +24,7 @@ class SalesforceSubscriber
                                     Description: 'all account records',
                                     NotifyForOperations: 'All',
                                     NotifyForFields: 'All',
-                                    Query: 'select Id, Name, Phone, Type, BillingStreet,BillingCity, BillingState, BillingPostalCode, BillingCountry, Ownerid, ParentId, IsDeleted from Account')
+                                    Query: 'select Id, Name, Phone, Type, Ownerid, ParentId, IsDeleted from Account')
     
     PushTopic.create(sf_id: account_topic, topic_type: 'account') if account_topic.present? && account_topic.is_a?(String)
     Logger.new(LOG_PATH).info('Account Push Topic Id: ' + account_topic)

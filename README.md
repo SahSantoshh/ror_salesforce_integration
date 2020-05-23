@@ -1,24 +1,37 @@
 # ror_salesforce_integration
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Salesforce Streaming API
+Used
+* Ruby 2.6.2
+* Rails 6.0.3.1
+* DB: Postgresql
 
-Things you may want to cover:
+## Setup
+**Database**  
+Change `config/database.yml` file as required  
 
-* Ruby version
+**Environment Variables**
 
-* System dependencies
+Create `.env` file in project root directory and add following valiables.
 
-* Configuration
+* USERNAME: User name of user who have access to read accounts and contacts records
+* PASSWORD: Password of the user
+* SECURITY_TOKEN: Security token of the user. Check doc for details.
+* CLIENT_ID: **create a connected app** Consumer Key
+* CLIENT_SECRET: **create a connected app** Consumer Secret
+* ACCOUNT_PUSH_TOPIC_NAME: Topic name for subscribing accounts for realtime changes. **max_char:** 25
+* CONTACT_PUSH_TOPIC_NAME: Topic name for subscribing contacts for realtime changes. **max_char:** 25
+* REDIS_URL: redis server url
 
-* Database creation
+**Run** following commands from termain within project root directory
+* `bundle install` 
+* `rake db:migrate`
 
-* Database initialization
 
-* How to run the test suite
+## ToDO
+- [x] Saledforce Integration Setup 
+- [ ] Views for Accounts
+- [ ] Views for Contacts
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
+Feel free to send PR and use this code base as starter project for your project with Salesforce.
